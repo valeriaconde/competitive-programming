@@ -10,7 +10,7 @@
 #include <vector>
 using namespace std;
 
-int ar[505][505];
+char ar[505][505];
 int r, c;
 
 // recibe una coordenada y ve si es lobo
@@ -57,10 +57,7 @@ int main() {
                     cout << "No" << endl;
                     return 0;
                 }
-                
             }
-
-
         }
     }
     
@@ -72,7 +69,6 @@ int main() {
         }
         cout << endl;
     }
-    
     
     return 0;
 }
