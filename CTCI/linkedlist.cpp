@@ -38,9 +38,8 @@ public:
     }
     
     void setNext(Node<T> *next) {
-        this->data = data;
+        this->next = next;
     }
-    
 };
 
 template <class T>
@@ -69,7 +68,10 @@ public:
 
     // O(n)
     void addLast(T data) {
-        if(size == 0) addFirst(data);
+        if(size == 0) {
+            addFirst(data);
+            return;
+        }
         Node<T> *curr = head;
         while(curr->getNext() != nullptr) {
             curr = curr->getNext();
